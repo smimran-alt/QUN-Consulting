@@ -2,3 +2,28 @@
 @media(max-width:900px){.nav{min-height:70px}.mobile-btn{display:block}.menu{display:none;position:absolute;left:0;right:0;top:70px;background:#181818;flex-direction:column;align-items:stretch;padding:10px 25px 25px;gap:0}.menu.open{display:flex}.menu>a,.menu>button{text-align:left;padding:13px 0}.mega{top:70px;max-height:75vh;overflow:auto}.megagrid{grid-template-columns:1fr;gap:10px}.grid{grid-template-columns:repeat(2,1fr)}.split,.contact-grid{grid-template-columns:1fr}.footergrid{grid-template-columns:repeat(2,1fr)}.hero{min-height:510px}.hero .container{padding-block:70px}}
 @media(max-width:570px){.container{padding-inline:21px}.hero h1{font-size:47px}.hero p{font-size:16px}.section{padding:64px 0}.grid,.grid.two,.kpi,.footergrid{grid-template-columns:1fr}.section-head{display:block}.feature{grid-template-columns:1fr}.feature-image{height:210px}.feature-body{padding:28px}.cta-band .container{display:block}.cta-band .button{margin-top:25px}.quote{font-size:28px;padding:28px}.subhero{padding:55px 0}.subhero h1{font-size:42px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* Interactive photographic hero carousel */
+.hero-carousel{position:relative;min-height:660px;display:block;background:#090b09;isolation:isolate}
+.hero-carousel:before{display:none!important}
+.hero-images{position:absolute;inset:0;z-index:-1;overflow:hidden}
+.hero-image{position:absolute;inset:0;opacity:0;background-size:cover;background-position:center;transform:scale(1.065);transition:opacity 1.35s ease,transform 9s ease}
+.hero-image.is-active{opacity:1;transform:scale(1)}
+.hero-images:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.88) 0%,rgba(0,0,0,.76) 32%,rgba(0,0,0,.37) 72%,rgba(0,0,0,.35) 100%),linear-gradient(0deg,rgba(0,0,0,.42),transparent 38%);pointer-events:none}
+.hero-carousel .hero-carousel-content{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;min-height:660px;padding-top:100px;padding-bottom:68px}
+.hero-story-area{position:relative;width:100%;min-height:365px;max-width:900px}
+.hero-story{position:absolute;inset:0 auto auto 0;width:100%;opacity:0;visibility:hidden;transform:translateY(16px);transition:opacity .55s ease,transform .55s ease,visibility .55s}
+.hero-story.is-active{opacity:1;visibility:visible;transform:translateY(0)}
+.hero-story h1{font-size:clamp(48px,5.3vw,78px);max-width:850px;line-height:1.06;letter-spacing:-.06em;margin:22px 0 23px}
+.hero-story p{max-width:590px;font-size:18px;line-height:1.75;margin:0 0 24px}
+.hero-story .eyebrow{letter-spacing:.9px;color:#eee}
+.hero-story .button{padding:16px 25px;margin-top:6px;min-width:180px;text-align:center}
+.hero-carousel-controls{display:flex;align-items:center;gap:9px;margin-top:33px}
+.hero-carousel-tab,.hero-pause{background:rgba(0,0,0,.52);color:#fff;border:1px solid rgba(255,255,255,.56);width:47px;height:43px;display:grid;place-items:center;font-weight:700;font-size:13px;transition:background .2s,color .2s}
+.hero-carousel-tab:hover,.hero-pause:hover{background:#3a3a3a}
+.hero-carousel-tab.is-active{background:var(--green);color:#101010;border-color:var(--green)}
+.hero-pause{margin-left:10px}
+.hero-slide-announcement{position:absolute!important;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:900px){.hero-carousel,.hero-carousel .hero-carousel-content{min-height:625px}.hero-story-area{min-height:400px}.hero-image{background-position:62% center}}
+@media(max-width:570px){.hero-carousel,.hero-carousel .hero-carousel-content{min-height:660px}.hero-carousel .hero-carousel-content{padding-block:70px 55px}.hero-story-area{min-height:455px}.hero-story h1{font-size:clamp(39px,10vw,53px)}.hero-story p{font-size:16px}.hero-carousel-controls{gap:6px;margin-top:12px}.hero-carousel-tab,.hero-pause{width:42px;height:40px}.hero-images:after{background:linear-gradient(90deg,#000d,#0008),linear-gradient(0deg,#0008,transparent 65%)}}
+@media(prefers-reduced-motion:reduce){.hero-image,.hero-story{transition:none!important;transform:none!important}}
