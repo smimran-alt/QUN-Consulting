@@ -2,3 +2,72 @@
 @media(max-width:900px){.nav{min-height:70px}.mobile-btn{display:block}.menu{display:none;position:absolute;left:0;right:0;top:70px;background:#181818;flex-direction:column;align-items:stretch;padding:10px 25px 25px;gap:0}.menu.open{display:flex}.menu>a,.menu>button{text-align:left;padding:13px 0}.mega{top:70px;max-height:75vh;overflow:auto}.megagrid{grid-template-columns:1fr;gap:10px}.grid{grid-template-columns:repeat(2,1fr)}.split,.contact-grid{grid-template-columns:1fr}.footergrid{grid-template-columns:repeat(2,1fr)}.hero{min-height:510px}.hero .container{padding-block:70px}}
 @media(max-width:570px){.container{padding-inline:21px}.hero h1{font-size:47px}.hero p{font-size:16px}.section{padding:64px 0}.grid,.grid.two,.kpi,.footergrid{grid-template-columns:1fr}.section-head{display:block}.feature{grid-template-columns:1fr}.feature-image{height:210px}.feature-body{padding:28px}.cta-band .container{display:block}.cta-band .button{margin-top:25px}.quote{font-size:28px;padding:28px}.subhero{padding:55px 0}.subhero h1{font-size:42px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* QUN premium editorial homepage; Deloitte Global-inspired hierarchy, independent brand */
+:root{--green:#86BC25;--black:#000;--grey:#F2F2F2}
+body{font-family:Arial,Helvetica,sans-serif}
+header{box-shadow:none}
+.logo{letter-spacing:-1.8px}
+.qun-featured-hero{min-height:640px;background:#0e1110;isolation:isolate}
+.qun-featured-hero:before{display:none}
+.hero-art{position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#070909 1%,#0b100ed9 36%,#0b100e60 75%),url("https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=2400&q=85") center 49%/cover}
+.hero-editorial{display:flex;align-items:center;min-height:640px}
+.hero-copy{max-width:870px}
+.qun-featured-hero .eyebrow{letter-spacing:.6px;color:#d7dbd9}
+.qun-featured-hero h1{font-size:clamp(52px,6.2vw,90px);line-height:1.05;letter-spacing:-.065em;max-width:880px;margin:25px 0}
+.qun-featured-hero p{max-width:600px;font-size:19px;color:#e1e5e0;line-height:1.75}
+.qun-featured-hero .button{padding:17px 26px;margin-top:21px}
+.hero-editorial-meta{margin-top:65px;color:#dce4d7;font-size:11px;letter-spacing:2px}
+.qun-purpose{padding:112px 0 120px;background:white}
+.purpose-columns{display:grid;grid-template-columns:1.25fr .75fr;gap:95px;align-items:end}
+.qun-purpose h2{font-size:clamp(45px,5.5vw,75px);letter-spacing:-.07em;font-weight:600;line-height:1.13;margin:22px 0 0}
+.qun-purpose h2 span{color:#5a8621}
+.purpose-copy p{color:#484848;font-size:20px;line-height:1.8;margin:0}
+.purpose-actions{display:flex;gap:28px;margin-top:27px;flex-wrap:wrap}
+.qun-underline{display:inline-block;padding-bottom:7px;border-bottom:2px solid var(--green);font-size:14px;font-weight:700}
+.qun-underline:hover{color:#547f1b}
+.qun-editorial-section,.qun-work-section,.qun-capabilities-section,.qun-industries-section{padding:100px 0}
+.qun-editorial-section{background:#f2f2f2}
+.qun-section-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:42px}
+.qun-section-head h2{font-size:clamp(38px,4.6vw,62px);line-height:1.12;font-weight:600;letter-spacing:-.065em;margin:12px 0 0}
+.qun-section-head>p{max-width:380px;line-height:1.8;color:#555;font-size:15px}
+.qun-story-grid{display:grid;grid-template-columns:1.18fr 1fr 1fr;gap:17px}
+.qun-story{background:white;display:flex;flex-direction:column;color:#111;transition:transform .22s,box-shadow .22s}
+.qun-story:hover{transform:translateY(-4px);box-shadow:0 14px 26px #00000015}
+.qun-story-image{height:220px;background-position:center;background-size:cover}
+.qun-story-lead .qun-story-image{height:265px}
+.qun-image-cyber{background-image:url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1100&q=82")}
+.qun-image-ai{background-image:url("https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=850&q=82")}
+.qun-image-grc{background-image:url("https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=850&q=82")}
+.qun-story-content{padding:29px;display:flex;flex-direction:column;flex:1}
+.qun-story-category{font-size:11px;font-weight:700;letter-spacing:.7px;color:#5b5b5b}
+.qun-story h3{font-size:clamp(23px,2.1vw,31px);line-height:1.2;letter-spacing:-.04em;font-weight:600;margin:25px 0 12px}
+.qun-story p{font-size:14px;line-height:1.75;color:#515151;margin:0}
+.qun-story-link{margin-top:auto;padding-top:27px;font-size:14px;font-weight:700}
+.qun-work-section{background:#fff}
+.qun-work-grid{display:grid;grid-template-columns:1fr 1fr;gap:19px}
+.qun-work-item{display:grid;grid-template-columns:47% 53%;background:#f2f2f2;min-height:335px}
+.qun-work-image{background-position:center;background-size:cover}
+.qun-work-cloud{background-image:url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=82")}
+.qun-work-resilience{background-image:url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=82")}
+.qun-work-content{padding:31px;display:flex;flex-direction:column}
+.qun-work-content h3{font-size:clamp(24px,2.4vw,33px);letter-spacing:-.05em;font-weight:600;line-height:1.16;margin:27px 0 14px}
+.qun-work-content p{font-size:14px;color:#555;line-height:1.75;margin:0}
+.qun-work-content .qun-underline{margin-top:auto;align-self:flex-start;padding-top:20px}
+.qun-capabilities-section{background:#111;color:white}
+.qun-capabilities-section .qun-underline{color:#fff}
+.qun-capabilities-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid #555;border-left:1px solid #555}
+.qun-capabilities-grid a{display:flex;flex-direction:column;padding:35px;min-height:230px;border-right:1px solid #555;border-bottom:1px solid #555;transition:background .2s}
+.qun-capabilities-grid a:hover{background:#24301c}
+.qun-capabilities-grid small{color:#b5e276;font-size:12px;letter-spacing:.6px}
+.qun-capabilities-grid strong{font-size:26px;font-weight:600;letter-spacing:-.04em;line-height:1.17;margin-top:32px}
+.qun-capabilities-grid a span{color:#b5e276;margin-top:auto;align-self:flex-end}
+.qun-industries-section{background:#f2f2f2}
+.qun-industry-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.qun-industry-grid a{background:#fff;border-bottom:4px solid transparent;min-height:200px;padding:30px;font-size:24px;font-weight:600;line-height:1.2;letter-spacing:-.04em;display:flex;flex-direction:column;justify-content:space-between}
+.qun-industry-grid a:hover{border-bottom-color:var(--green)}
+.qun-industry-grid span{align-self:flex-end;color:#547c1b}
+@media(max-width:1100px){.qun-story-grid{grid-template-columns:repeat(2,1fr)}.qun-story-lead{grid-column:span 2}.qun-work-grid{grid-template-columns:1fr}.qun-industry-grid{grid-template-columns:repeat(2,1fr)}.purpose-columns{gap:45px}}
+@media(max-width:780px){.purpose-columns{grid-template-columns:1fr;gap:28px}.qun-section-head{align-items:start;flex-direction:column;gap:15px}.qun-capabilities-grid{grid-template-columns:repeat(2,1fr)}.qun-featured-hero,.hero-editorial{min-height:570px}.hero-art{background-position:65% center}}
+@media(max-width:560px){.qun-featured-hero,.hero-editorial{min-height:570px}.qun-featured-hero h1{font-size:47px}.qun-featured-hero p{font-size:16px}.qun-purpose,.qun-editorial-section,.qun-work-section,.qun-capabilities-section,.qun-industries-section{padding:67px 0}.qun-purpose h2{font-size:43px}.purpose-copy p{font-size:17px}.qun-story-grid,.qun-capabilities-grid,.qun-industry-grid{grid-template-columns:1fr}.qun-story-lead{grid-column:auto}.qun-story-lead .qun-story-image{height:220px}.qun-work-item{grid-template-columns:1fr}.qun-work-image{height:190px}.qun-section-head h2{font-size:39px}.hero-editorial-meta{margin-top:35px}}
+@media(prefers-reduced-motion:reduce){.qun-story,.qun-capabilities-grid a{transition:none}}
