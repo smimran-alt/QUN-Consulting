@@ -241,3 +241,27 @@ h1,h2,h3,h4{overflow-wrap:break-word}
  .qun-story p,.qun-work-content p{font-size:14.5px}
  .hero-editorial-meta{font-size:10px;letter-spacing:.9px}
 }
+
+
+/* Navigation typography refinement — 2026-10-16 */
+@media(min-width:901px){
+ .nav{min-height:88px;gap:36px}
+ .menu{gap:clamp(22px,2.35vw,37px)}
+ .menu>a,.menu>button{font-family:var(--type-display,"Manrope",sans-serif);font-size:15px;font-weight:600;line-height:1.45;letter-spacing:-.012em;white-space:nowrap}
+ .menu .navcontact{font-size:14px;font-weight:700;padding:12px 21px;min-height:44px;display:inline-flex;align-items:center}
+}
+.logo{font-family:var(--type-display,"Manrope",sans-serif);font-size:32px;letter-spacing:-1.35px;font-weight:800;line-height:1}
+.logo small{font-family:var(--type-body,"Open Sans",sans-serif);font-size:10px;font-weight:700;letter-spacing:2.6px;line-height:1.2;margin-top:8px}
+.menu>a,.menu>button{transition:color .18s ease}
+.menu>button{appearance:none}
+@media(min-width:901px) and (max-width:1100px){
+ .menu{gap:17px}
+ .menu>a,.menu>button{font-size:14px}
+ .nav{gap:25px}
+}
+@media(max-width:900px){
+ .nav{min-height:72px}
+ .menu>a,.menu>button{font-family:var(--type-display,"Manrope",sans-serif);font-size:16px;font-weight:600;line-height:1.55;letter-spacing:0}
+ .menu .navcontact{font-size:15px;font-weight:700}
+}
+@media(max-width:560px){.logo{font-size:29px}.logo small{font-size:9px;letter-spacing:2.4px}}
