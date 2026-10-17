@@ -196,3 +196,29 @@ h1,h2,h3,h4,.logo,.qun-story h3,.qun-work-content h3,.qun-capabilities-grid stro
 .qun-story p{font-size:14px;line-height:1.8}
 @media(max-width:1100px){.qun-story-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.qun-story-lead{grid-column:auto}}
 @media(max-width:700px){.qun-story-grid{grid-template-columns:1fr}.qun-story h3{min-height:0}.qun-story-image,.qun-story-lead .qun-story-image{height:225px}}
+
+
+/* QUN editorial typography refinement — readable, balanced desktop + mobile */
+:root{--type-display:"Manrope","Open Sans",Arial,sans-serif;--type-body:"Open Sans",Arial,sans-serif}
+body{font-family:var(--type-body);font-size:16px;line-height:1.72;font-weight:400}
+.qun-featured-hero h1,.qun-purpose h2,.qun-section-head h2,.qun-story h3,.qun-work-content h3,.qun-capabilities-grid strong,.qun-industry-grid a,.section h2,.subhero h1,.cta-band h2{font-family:var(--type-display)}
+.qun-featured-hero h1{font-size:clamp(47px,5.05vw,76px);font-weight:600;letter-spacing:-.058em;line-height:1.15;max-width:970px;margin:26px 0 30px}
+.qun-featured-hero .hero-copy{max-width:975px}
+.qun-featured-hero p{font-size:18px;line-height:1.78;font-weight:400;max-width:580px}
+.qun-featured-hero .eyebrow{font-family:var(--type-body);font-size:12px;line-height:1.55;letter-spacing:1.45px;font-weight:700}
+.hero-editorial-meta{font-size:11px;letter-spacing:1.4px;font-weight:600;line-height:1.65}
+.logo{font-family:var(--type-display);font-weight:800;font-size:32px;line-height:1;letter-spacing:-1.7px}
+.logo small{font-family:var(--type-body);font-size:10px;line-height:1.3;letter-spacing:2.7px;margin-top:7px}
+.menu>a,.menu>button{font-family:var(--type-body);font-size:14px;font-weight:600;letter-spacing:.02em;line-height:1.4}
+.menu .navcontact{font-size:14px}
+.qun-featured-hero .button{font-family:var(--type-body);font-size:14px;font-weight:700;letter-spacing:.01em;padding:16px 25px}
+.eyebrow{font-size:12px;letter-spacing:1.2px;font-weight:700}
+.qun-purpose h2{font-weight:600;letter-spacing:-.047em;line-height:1.2}
+.qun-section-head h2{font-weight:600;letter-spacing:-.048em;line-height:1.22}
+.qun-story h3{font-weight:650;letter-spacing:-.035em;line-height:1.35}
+.qun-work-content h3{font-weight:650;letter-spacing:-.032em;line-height:1.3}
+.qun-story-category{font-size:11px;letter-spacing:.9px;font-weight:700}
+.qun-story p,.qun-work-content p{font-family:var(--type-body);font-size:14px;line-height:1.8}
+.qun-capabilities-grid strong{font-weight:600;line-height:1.28;letter-spacing:-.035em}
+@media(max-width:900px){.qun-featured-hero h1{font-size:clamp(48px,6.6vw,68px);line-height:1.17}}
+@media(max-width:560px){.qun-featured-hero h1{font-size:clamp(40px,10vw,52px);letter-spacing:-.052em;line-height:1.18}.qun-featured-hero p{font-size:16px;line-height:1.8}.logo{font-size:29px}.qun-featured-hero .eyebrow{font-size:11px;letter-spacing:1px}.hero-editorial-meta{font-size:10px;letter-spacing:.8px}}
