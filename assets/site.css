@@ -164,3 +164,34 @@ header{background:#090b09;border-bottom:1px solid #ffffff16}
 @media(max-width:780px){.purpose-copy{padding-left:22px}.qun-story-lead .qun-story-image{height:245px}.qun-featured-hero,.hero-editorial{min-height:610px}.qun-work-image{min-height:0}}
 @media(max-width:560px){.container{padding-inline:22px}.logo{font-size:29px}.qun-featured-hero,.hero-editorial{min-height:615px}.qun-featured-hero h1{font-size:clamp(44px,10.2vw,57px)}.qun-featured-hero p{font-size:16px;line-height:1.72}.hero-editorial-meta{letter-spacing:1.4px}.qun-purpose{padding-block:80px}.purpose-copy{border-left:0;padding-left:0}.qun-purpose h2{font-size:43px}.qun-editorial-section,.qun-work-section,.qun-capabilities-section,.qun-industries-section{padding-block:75px}.qun-section-head h2{font-size:38px}.qun-work-item{min-height:0}.qun-work-image{height:220px}.qun-capabilities-grid a{min-height:204px;padding:28px}.qun-story-content{padding:27px}.qun-industry-grid a{min-height:185px;padding:28px}.cta-band{padding:65px 0}}
 @media(prefers-reduced-motion:reduce){.qun-story-image,.qun-work-image,.menu>a:after,.menu>button:after{transition:none!important}}
+
+
+/* Typography alignment: Open Sans editorial consulting scale */
+:root{--type-body:"Open Sans",Arial,Helvetica,sans-serif;--type-heading:"Open Sans",Arial,Helvetica,sans-serif}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--type-body);font-size:15px;line-height:1.68;font-weight:400;letter-spacing:0;-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font-family:var(--type-body)}
+h1,h2,h3,h4,.logo,.qun-story h3,.qun-work-content h3,.qun-capabilities-grid strong{font-family:var(--type-heading)}
+.logo{font-weight:800;letter-spacing:-1.55px}
+.logo small{font-weight:700;letter-spacing:3px}
+.menu>a,.menu>button{font-weight:600;font-size:14px;letter-spacing:0}
+.eyebrow,.qun-story-category,.qun-capabilities-grid small{font-weight:700;letter-spacing:.9px}
+.qun-featured-hero h1{font-weight:700;letter-spacing:-.049em;line-height:1.09;font-size:clamp(52px,5.9vw,83px)}
+.qun-purpose h2{font-weight:600;letter-spacing:-.044em;line-height:1.18}
+.qun-section-head h2{font-weight:600;letter-spacing:-.045em;line-height:1.18}
+.qun-story h3{font-weight:700;letter-spacing:-.032em;line-height:1.29;font-size:clamp(23px,2.0vw,28px)}
+.qun-work-content h3{font-weight:700;letter-spacing:-.033em;line-height:1.26}
+.qun-capabilities-grid strong{font-weight:600;letter-spacing:-.028em}
+.qun-industry-grid a{font-weight:600;letter-spacing:-.025em}
+.section h2,.subhero h1,.cta-band h2{font-weight:600;letter-spacing:-.043em}
+.tile h3,.feature-body h3{font-weight:700;letter-spacing:-.025em}
+.qun-story-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
+.qun-story-lead{grid-column:auto}
+.qun-story,.qun-story-lead{min-width:0;height:100%}
+.qun-story-image,.qun-story-lead .qun-story-image{height:235px;flex-shrink:0}
+.qun-story-content{flex:1}
+.qun-story h3{min-height:3.9em;margin:20px 0 16px}
+.qun-story-link{margin-top:auto}
+.qun-story p{font-size:14px;line-height:1.8}
+@media(max-width:1100px){.qun-story-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.qun-story-lead{grid-column:auto}}
+@media(max-width:700px){.qun-story-grid{grid-template-columns:1fr}.qun-story h3{min-height:0}.qun-story-image,.qun-story-lead .qun-story-image{height:225px}}
