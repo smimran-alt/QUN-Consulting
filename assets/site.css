@@ -167,58 +167,77 @@ header{background:#090b09;border-bottom:1px solid #ffffff16}
 @media(prefers-reduced-motion:reduce){.qun-story-image,.qun-work-image,.menu>a:after,.menu>button:after{transition:none!important}}
 
 
-/* Typography alignment: Open Sans editorial consulting scale */
-:root{--type-body:"Open Sans",Arial,Helvetica,sans-serif;--type-heading:"Open Sans",Arial,Helvetica,sans-serif}
+/* QUN unified typography system | navigation + editorial body */
+:root{
+ --type-display:"Manrope",Arial,Helvetica,sans-serif;
+ --type-body:"Open Sans",Arial,Helvetica,sans-serif;
+}
 html{-webkit-text-size-adjust:100%}
-body{font-family:var(--type-body);font-size:15px;line-height:1.68;font-weight:400;letter-spacing:0;-webkit-font-smoothing:antialiased}
-button,input,select,textarea{font-family:var(--type-body)}
-h1,h2,h3,h4,.logo,.qun-story h3,.qun-work-content h3,.qun-capabilities-grid strong{font-family:var(--type-heading)}
-.logo{font-weight:800;letter-spacing:-1.55px}
-.logo small{font-weight:700;letter-spacing:3px}
-.menu>a,.menu>button{font-weight:600;font-size:14px;letter-spacing:0}
-.eyebrow,.qun-story-category,.qun-capabilities-grid small{font-weight:700;letter-spacing:.9px}
-.qun-featured-hero h1{font-weight:700;letter-spacing:-.049em;line-height:1.09;font-size:clamp(52px,5.9vw,83px)}
-.qun-purpose h2{font-weight:600;letter-spacing:-.044em;line-height:1.18}
-.qun-section-head h2{font-weight:600;letter-spacing:-.045em;line-height:1.18}
-.qun-story h3{font-weight:700;letter-spacing:-.032em;line-height:1.29;font-size:clamp(23px,2.0vw,28px)}
-.qun-work-content h3{font-weight:700;letter-spacing:-.033em;line-height:1.26}
-.qun-capabilities-grid strong{font-weight:600;letter-spacing:-.028em}
-.qun-industry-grid a{font-weight:600;letter-spacing:-.025em}
-.section h2,.subhero h1,.cta-band h2{font-weight:600;letter-spacing:-.043em}
-.tile h3,.feature-body h3{font-weight:700;letter-spacing:-.025em}
+body{font-family:var(--type-body);font-size:16px;font-weight:400;line-height:1.75;letter-spacing:0;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+button,input,select,textarea{font-family:var(--type-body);font-size:inherit}
+h1,h2,h3,h4,.logo,.qun-story h3,.qun-work-content h3,.qun-capabilities-grid strong,.qun-industry-grid a{font-family:var(--type-display)}
+h1,h2,h3,h4{overflow-wrap:break-word}
+.logo{font-weight:800;font-size:32px;letter-spacing:-1.6px;line-height:1}
+.logo small{font-family:var(--type-body);font-weight:700;font-size:10px;letter-spacing:2.5px;line-height:1.3;margin-top:8px}
+.menu{gap:clamp(18px,2.4vw,34px)}
+.menu>a,.menu>button{font-family:var(--type-display);font-weight:650;font-size:14px;line-height:1.5;letter-spacing:-.008em;white-space:nowrap}
+.menu .navcontact{font-size:14px;font-weight:700;letter-spacing:0}
+.megagrid h3{font-family:var(--type-display);font-size:32px;font-weight:650;line-height:1.2;letter-spacing:-.035em}
+.megagrid p{font-size:15px;line-height:1.8}
+.megagrid a{font-family:var(--type-body);font-size:15px;font-weight:600;line-height:1.55}
+.eyebrow,.qun-story-category,.qun-capabilities-grid small{font-family:var(--type-body);font-size:11px;font-weight:700;letter-spacing:1.1px;line-height:1.55}
+.qun-featured-hero h1{font-size:clamp(48px,5.15vw,77px);font-weight:650;letter-spacing:-.057em;line-height:1.12}
+.qun-featured-hero p{font-size:18px;line-height:1.85;font-weight:400;max-width:600px}
+.qun-featured-hero .button,.button{font-family:var(--type-body);font-size:14px;font-weight:700;letter-spacing:0;line-height:1.45}
+.hero-editorial-meta{font-size:11px;font-weight:600;letter-spacing:1.35px}
+.qun-purpose h2{font-size:clamp(45px,5vw,70px);font-weight:600;letter-spacing:-.052em;line-height:1.2}
+.purpose-copy p,.section .intro,.section-head p,.qun-section-head>p{font-size:17px;line-height:1.85}
+.qun-section-head h2{font-weight:650;letter-spacing:-.051em;line-height:1.2}
+.qun-story h3{font-size:clamp(23px,2vw,29px);font-weight:700;line-height:1.34;letter-spacing:-.035em;margin:21px 0 15px;min-height:4.02em}
+.qun-story p,.qun-work-content p{font-size:15px;line-height:1.82;letter-spacing:0}
 .qun-story-grid{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch}
 .qun-story-lead{grid-column:auto}
 .qun-story,.qun-story-lead{min-width:0;height:100%}
 .qun-story-image,.qun-story-lead .qun-story-image{height:235px;flex-shrink:0}
 .qun-story-content{flex:1}
-.qun-story h3{min-height:3.9em;margin:20px 0 16px}
-.qun-story-link{margin-top:auto}
-.qun-story p{font-size:14px;line-height:1.8}
-@media(max-width:1100px){.qun-story-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.qun-story-lead{grid-column:auto}}
-@media(max-width:700px){.qun-story-grid{grid-template-columns:1fr}.qun-story h3{min-height:0}.qun-story-image,.qun-story-lead .qun-story-image{height:225px}}
-
-
-/* QUN editorial typography refinement — readable, balanced desktop + mobile */
-:root{--type-display:"Manrope","Open Sans",Arial,sans-serif;--type-body:"Open Sans",Arial,sans-serif}
-body{font-family:var(--type-body);font-size:16px;line-height:1.72;font-weight:400}
-.qun-featured-hero h1,.qun-purpose h2,.qun-section-head h2,.qun-story h3,.qun-work-content h3,.qun-capabilities-grid strong,.qun-industry-grid a,.section h2,.subhero h1,.cta-band h2{font-family:var(--type-display)}
-.qun-featured-hero h1{font-size:clamp(47px,5.05vw,76px);font-weight:600;letter-spacing:-.058em;line-height:1.15;max-width:970px;margin:26px 0 30px}
-.qun-featured-hero .hero-copy{max-width:975px}
-.qun-featured-hero p{font-size:18px;line-height:1.78;font-weight:400;max-width:580px}
-.qun-featured-hero .eyebrow{font-family:var(--type-body);font-size:12px;line-height:1.55;letter-spacing:1.45px;font-weight:700}
-.hero-editorial-meta{font-size:11px;letter-spacing:1.4px;font-weight:600;line-height:1.65}
-.logo{font-family:var(--type-display);font-weight:800;font-size:32px;line-height:1;letter-spacing:-1.7px}
-.logo small{font-family:var(--type-body);font-size:10px;line-height:1.3;letter-spacing:2.7px;margin-top:7px}
-.menu>a,.menu>button{font-family:var(--type-body);font-size:14px;font-weight:600;letter-spacing:.02em;line-height:1.4}
-.menu .navcontact{font-size:14px}
-.qun-featured-hero .button{font-family:var(--type-body);font-size:14px;font-weight:700;letter-spacing:.01em;padding:16px 25px}
-.eyebrow{font-size:12px;letter-spacing:1.2px;font-weight:700}
-.qun-purpose h2{font-weight:600;letter-spacing:-.047em;line-height:1.2}
-.qun-section-head h2{font-weight:600;letter-spacing:-.048em;line-height:1.22}
-.qun-story h3{font-weight:650;letter-spacing:-.035em;line-height:1.35}
-.qun-work-content h3{font-weight:650;letter-spacing:-.032em;line-height:1.3}
-.qun-story-category{font-size:11px;letter-spacing:.9px;font-weight:700}
-.qun-story p,.qun-work-content p{font-family:var(--type-body);font-size:14px;line-height:1.8}
-.qun-capabilities-grid strong{font-weight:600;line-height:1.28;letter-spacing:-.035em}
-@media(max-width:900px){.qun-featured-hero h1{font-size:clamp(48px,6.6vw,68px);line-height:1.17}}
-@media(max-width:560px){.qun-featured-hero h1{font-size:clamp(40px,10vw,52px);letter-spacing:-.052em;line-height:1.18}.qun-featured-hero p{font-size:16px;line-height:1.8}.logo{font-size:29px}.qun-featured-hero .eyebrow{font-size:11px;letter-spacing:1px}.hero-editorial-meta{font-size:10px;letter-spacing:.8px}}
+.qun-story-link{margin-top:auto;font-size:14px;font-weight:700}
+.qun-work-content h3{font-weight:700;line-height:1.3;letter-spacing:-.035em}
+.qun-capabilities-grid strong{font-weight:650;line-height:1.28;letter-spacing:-.035em}
+.qun-industry-grid a{font-weight:650;letter-spacing:-.03em}
+.qun-underline,.textlink{font-family:var(--type-body);font-size:14px;font-weight:700}
+.section h2,.subhero h1,.cta-band h2{font-weight:650;letter-spacing:-.045em}
+.tile h3,.feature-body h3{font-weight:700;letter-spacing:-.03em;line-height:1.28}
+.tile p,.work-copy p,.prose p,.prose li{font-size:15.5px;line-height:1.85}
+.footer p,.footer a,.note,.legal{font-size:13.5px;line-height:1.75}
+.footer h3{font-family:var(--type-display);font-size:14px;font-weight:700}
+.form label{font-size:14px;line-height:1.5}
+@media(max-width:1100px){
+ .qun-story-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .qun-story-lead{grid-column:auto}
+ .menu{gap:15px}
+ .menu>a,.menu>button{font-size:13.5px}
+}
+@media(max-width:900px){
+ .menu{gap:0}
+ .menu>a,.menu>button{font-size:16px;font-weight:650;white-space:normal;line-height:1.5;padding:14px 0;min-height:48px}
+ .menu .navcontact{font-size:15px;min-height:48px}
+ .megagrid a{font-size:15px;min-height:44px}
+ .qun-featured-hero h1{font-size:clamp(47px,6.7vw,67px);line-height:1.16}
+}
+@media(max-width:700px){
+ .qun-story-grid{grid-template-columns:1fr}
+ .qun-story h3{min-height:0}
+ .qun-story-image,.qun-story-lead .qun-story-image{height:225px}
+}
+@media(max-width:560px){
+ body{font-size:15.5px;line-height:1.8}
+ .logo{font-size:29px}
+ .qun-featured-hero h1{font-size:clamp(40px,10vw,52px);line-height:1.18;letter-spacing:-.051em}
+ .qun-featured-hero p{font-size:16px;line-height:1.8}
+ .qun-purpose h2{font-size:42px}
+ .qun-section-head h2{font-size:38px}
+ .purpose-copy p,.section .intro{font-size:16px}
+ .qun-story h3{font-size:25px}
+ .qun-story p,.qun-work-content p{font-size:14.5px}
+ .hero-editorial-meta{font-size:10px;letter-spacing:.9px}
+}
