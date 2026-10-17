@@ -71,3 +71,96 @@ header{box-shadow:none}
 @media(max-width:780px){.purpose-columns{grid-template-columns:1fr;gap:28px}.qun-section-head{align-items:start;flex-direction:column;gap:15px}.qun-capabilities-grid{grid-template-columns:repeat(2,1fr)}.qun-featured-hero,.hero-editorial{min-height:570px}.hero-art{background-position:65% center}}
 @media(max-width:560px){.qun-featured-hero,.hero-editorial{min-height:570px}.qun-featured-hero h1{font-size:47px}.qun-featured-hero p{font-size:16px}.qun-purpose,.qun-editorial-section,.qun-work-section,.qun-capabilities-section,.qun-industries-section{padding:67px 0}.qun-purpose h2{font-size:43px}.purpose-copy p{font-size:17px}.qun-story-grid,.qun-capabilities-grid,.qun-industry-grid{grid-template-columns:1fr}.qun-story-lead{grid-column:auto}.qun-story-lead .qun-story-image{height:220px}.qun-work-item{grid-template-columns:1fr}.qun-work-image{height:190px}.qun-section-head h2{font-size:39px}.hero-editorial-meta{margin-top:35px}}
 @media(prefers-reduced-motion:reduce){.qun-story,.qun-capabilities-grid a{transition:none}}
+
+
+/* QUN visual refinement — premium editorial consulting, October 2026 */
+:root{--ink:#181b19;--black:#090c0a;--green:#86bc25;--muted:#5b625d;--grey:#f5f6f3;--line:#e1e5e0;--max-layout:1296px}
+html{scroll-padding-top:92px}
+body{font-family:"Inter",Arial,Helvetica,sans-serif;font-size:15px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.container{max-width:var(--max-layout);padding-inline:clamp(24px,4.2vw,62px)}
+header{background:#090b09;border-bottom:1px solid #ffffff16}
+.nav{min-height:84px;gap:42px}
+.logo{font-family:"Inter",Arial,sans-serif;font-size:32px;letter-spacing:-2.1px;font-weight:800;line-height:.91}
+.logo small{font-size:9px;letter-spacing:3.6px;margin-top:11px}
+.menu{gap:clamp(18px,2.6vw,38px)}
+.menu>a,.menu>button{font-size:13px;font-weight:650;letter-spacing:.04px}
+.menu>a:not(.navcontact),.menu>button{position:relative}
+.menu>a:not(.navcontact):after,.menu>button:after{content:"";position:absolute;height:2px;background:var(--green);bottom:-11px;left:0;right:100%;transition:right .24s ease}
+.menu>a:not(.navcontact):hover:after,.menu>button:hover:after{right:0}
+.menu .navcontact{border:1px solid #ffffff85;padding:12px 19px;background:none;transition:background .2s,border-color .2s}
+.menu .navcontact:hover{background:var(--green);border-color:var(--green);color:#111}
+.mega{top:84px;background:#171c18;box-shadow:0 23px 45px #0007}
+.megagrid{padding-top:47px;padding-bottom:55px;gap:58px}
+.megagrid h3{font-size:34px;letter-spacing:-1.5px}
+.megagrid a{transition:padding-left .18s,color .18s}
+.megagrid a:hover{padding-left:8px}
+.eyebrow{letter-spacing:1.8px;font-size:11px;font-weight:750}
+.qun-featured-hero,.hero-editorial{min-height:690px}
+.hero-art{background:linear-gradient(90deg,rgba(7,10,9,.96) 0%,rgba(7,11,10,.88) 29%,rgba(6,10,9,.37) 74%,rgba(6,9,8,.3) 100%),linear-gradient(0deg,#06080770,transparent 50%),url("https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=2400&q=85") center/cover}
+.hero-editorial{padding-top:80px;padding-bottom:75px}
+.hero-copy{max-width:960px}
+.qun-featured-hero h1{font-family:"Inter",Arial,sans-serif;font-size:clamp(55px,6.3vw,91px);font-weight:650;line-height:1.055;letter-spacing:-.075em;margin:29px 0 30px}
+.qun-featured-hero h1 .accent{color:#b9e88c}
+.qun-featured-hero p{font-size:19px;line-height:1.75;max-width:610px;color:#e4e9e4}
+.qun-featured-hero .button{margin-top:23px}
+.button{background:var(--green);border:1px solid var(--green);font-size:13px;font-weight:750;letter-spacing:.1px;transition:background .2s ease,transform .2s ease,box-shadow .2s ease}
+.button:hover{background:#a5db50;border-color:#a5db50;transform:translateY(-2px);box-shadow:0 9px 23px #86bc2530}
+.hero-editorial-meta{border-top:1px solid #ffffff4d;padding-top:21px;max-width:440px;font-size:10px;letter-spacing:2.1px;color:#c4cac5}
+.qun-purpose{padding-top:125px;padding-bottom:125px}
+.purpose-columns{gap:clamp(55px,8vw,125px);align-items:center}
+.qun-purpose h2{font-size:clamp(46px,5vw,70px);font-weight:620;line-height:1.115}
+.qun-purpose h2 span{color:#537c23}
+.purpose-copy{border-left:3px solid #a9cf6c;padding-left:32px}
+.purpose-copy p{font-size:18px;line-height:1.85}
+.qun-underline{border-bottom:2px solid var(--green);transition:color .18s,border-color .18s}
+.qun-underline:hover{border-color:#426c1f}
+.qun-editorial-section,.qun-work-section,.qun-capabilities-section,.qun-industries-section{padding-top:110px;padding-bottom:115px}
+.qun-editorial-section,.qun-industries-section{background:#f4f5f2}
+.qun-section-head{margin-bottom:47px}
+.qun-section-head h2{font-size:clamp(39px,4.25vw,58px);letter-spacing:-.066em;font-weight:650}
+.qun-story-grid{gap:22px}
+.qun-story{box-shadow:0 2px 8px #06110806;overflow:hidden}
+.qun-story:hover{transform:translateY(-5px);box-shadow:0 17px 37px #09190f1b}
+.qun-story-image{height:225px;transition:transform .55s ease;transform-origin:center}
+.qun-story-lead .qun-story-image{height:266px}
+.qun-story:hover .qun-story-image{transform:scale(1.035)}
+.qun-story-content{position:relative;background:#fff;z-index:1;padding:33px}
+.qun-story-category{letter-spacing:1.25px;font-size:10px;font-weight:750;color:#586553}
+.qun-story h3{font-weight:660;line-height:1.22;font-size:clamp(23px,2.05vw,29px);margin-top:22px}
+.qun-story p{line-height:1.8;color:#5a605b}
+.qun-story-link{color:#314f21;font-size:13px}
+.qun-work-grid{gap:24px}
+.qun-work-item{background:#f4f5f2;min-height:355px;box-shadow:0 3px 12px #09190f09;overflow:hidden}
+.qun-work-image{min-height:355px;transition:transform .55s}
+.qun-work-item:hover .qun-work-image{transform:scale(1.025)}
+.qun-work-content{background:#f4f5f2;z-index:1;position:relative;padding:clamp(25px,3vw,40px)}
+.qun-work-content h3{font-weight:650;line-height:1.22}
+.qun-work-content p{line-height:1.8}
+.qun-capabilities-section{background:#111513}
+.qun-capabilities-grid{border-color:#4b5a50}
+.qun-capabilities-grid a{min-height:258px;padding:38px;transition:background .2s,box-shadow .2s}
+.qun-capabilities-grid a:hover{background:#1c2e21;box-shadow:inset 0 4px var(--green)}
+.qun-capabilities-grid small{font-size:11px;letter-spacing:1.1px;color:#b8e486}
+.qun-capabilities-grid strong{font-size:clamp(23px,2.15vw,29px);line-height:1.22}
+.qun-industry-grid{gap:20px}
+.qun-industry-grid a{min-height:215px;box-shadow:0 3px 12px #09190f09;transition:transform .2s,border-color .2s;padding:35px}
+.qun-industry-grid a:hover{transform:translateY(-4px)}
+.cta-band{background:#0f1711;padding:85px 0}
+.cta-band h2{font-size:clamp(35px,4.1vw,55px);font-weight:600;line-height:1.11;letter-spacing:-.06em}
+.footer{padding-top:70px;background:#080a09}
+.footergrid{gap:clamp(30px,4vw,60px)}
+.footer h3{font-size:13px;color:#f2f2f2}
+.footer a{transition:color .15s}
+.footer p{max-width:270px;line-height:1.8}
+.subhero{padding-top:92px;padding-bottom:92px}
+.subhero h1{font-weight:650;letter-spacing:-.06em}
+.section h2{font-weight:650;letter-spacing:-.055em}
+.tile{background:white;border:1px solid #e5e8e1;box-shadow:0 3px 16px #0d201006;transition:transform .2s,border-color .2s,box-shadow .2s}
+.tile:hover{box-shadow:0 12px 29px #0d201016}
+.tile h3{letter-spacing:-.045em}
+.prose{font-size:16px}
+.prose h2{font-weight:650}
+@media(max-width:900px){.nav{min-height:72px}.mega{top:72px}.menu{top:72px;gap:0}.menu>a:not(.navcontact):after,.menu>button:after{display:none}.menu .navcontact{align-self:flex-start;margin-top:12px}.purpose-columns{gap:35px}.qun-work-item{min-height:320px}.qun-work-image{min-height:320px}}
+@media(max-width:780px){.purpose-copy{padding-left:22px}.qun-story-lead .qun-story-image{height:245px}.qun-featured-hero,.hero-editorial{min-height:610px}.qun-work-image{min-height:0}}
+@media(max-width:560px){.container{padding-inline:22px}.logo{font-size:29px}.qun-featured-hero,.hero-editorial{min-height:615px}.qun-featured-hero h1{font-size:clamp(44px,10.2vw,57px)}.qun-featured-hero p{font-size:16px;line-height:1.72}.hero-editorial-meta{letter-spacing:1.4px}.qun-purpose{padding-block:80px}.purpose-copy{border-left:0;padding-left:0}.qun-purpose h2{font-size:43px}.qun-editorial-section,.qun-work-section,.qun-capabilities-section,.qun-industries-section{padding-block:75px}.qun-section-head h2{font-size:38px}.qun-work-item{min-height:0}.qun-work-image{height:220px}.qun-capabilities-grid a{min-height:204px;padding:28px}.qun-story-content{padding:27px}.qun-industry-grid a{min-height:185px;padding:28px}.cta-band{padding:65px 0}}
+@media(prefers-reduced-motion:reduce){.qun-story-image,.qun-work-image,.menu>a:after,.menu>button:after{transition:none!important}}
