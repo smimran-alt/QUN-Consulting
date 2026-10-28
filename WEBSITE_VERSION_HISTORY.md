@@ -12,6 +12,31 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## v1.1.2 — Visual transformation of How Our Methodology Works
+
+**Date:** 2026-10-27
+
+**Status:** Current
+
+### Activities completed
+1. Rebuilt the guide's opening as a mountain-image editorial hero inspired by the approved reference, with QUN's white, dark green and lime-green colour palette.
+2. Added six prominent, linked circular phase icons with clear typical outcomes.
+3. Created six illustrated summary cards, each linking to its full phase explanation and displaying a high-resolution scalable SVG diagram.
+4. Preserved all six full phase explanations, activities, client deliverables, and decision questions below the new overview.
+5. Improved responsive layout and spacing across desktop, tablet, and mobile.
+6. Kept other methodology and service pages unchanged.
+
+### Affected files
+- `how-our-methodology-works.html`
+- `WEBSITE_VERSION_HISTORY.md`
+
+### Commit and rollback
+- Guide update commit: `18c143cf93476629e2ef827dd37c80edf16caf9e`
+- To revert the guide to **v1.1.1**, restore `how-our-methodology-works.html` from commit `ad25d9fa2449fe86e6145f2dc2ba624cec6654ae` (or its identical v1.1.1 file revision) and commit that content onto `main`. Do not force-push.
+- This version is a webpage reconstruction of the reference image, not a literal pixel-for-pixel image upload.
+
+---
+
 ## v1.1.1 — Detailed methodology infographic upgrade
 
 **Date:** 2026-10-27
