@@ -12,6 +12,34 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## v1.1.5 — Larger fonts and methodology illustrations
+
+**Date:** 2026-10-27
+
+**Status:** Current
+
+### Activities completed
+
+1. Increased hero heading, paragraph, navigation, section heading, phase-description, and CTA font sizes.
+2. Changed the eight featured methodologies to a spacious two-column desktop gallery instead of four small cards per row.
+3. Expanded the featured illustrations and their layout space, placing artwork beside each service's text in larger horizontal cards.
+4. Increased the service-card heading, category label, description, and navigation-arrow sizes.
+5. Improved spacing, card heights, contrast, and responsive tablet/mobile layouts.
+6. Retained all eight service links, the six-stage methodology and detailed guide links.
+
+### Affected files
+
+- `methodologies.html`
+- `WEBSITE_VERSION_HISTORY.md`
+
+### Commit and rollback
+
+- Page update commit: `1b89c3bb28f53f80ab5fd4b45667d30f81b4a8f2`.
+- To restore **v1.1.4**, restore `methodologies.html` from commit `d7c4c9ca16a8d250ac67a1bb8ffc71c02d2dd75e` and commit those contents on `main`, without force-pushing.
+- Other pages are unchanged.
+
+---
+
 ## v1.1.4 — Methodologies page content and image improvement
 
 **Date:** 2026-10-27
