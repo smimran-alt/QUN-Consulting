@@ -12,6 +12,38 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## v1.0.1 — Orientation and alignment refinement
+
+**Date:** 2026-10-27
+
+**Status:** Current
+
+### Activities performed
+
+1. Improved the hero content alignment and call-to-action wrapping.
+2. Standardized heading and introduction alignment across methodology sections.
+3. Equalized the layout and output-card positioning for all six signature stages.
+4. Improved the six explanatory cards' alignment, heights, and content spacing.
+5. Aligned the eight featured methodology cards, titles, arrows, and illustrations.
+6. Refined detailed methodology card sizing and infographic containment.
+7. Adjusted desktop, tablet, and mobile grid breakpoints for better orientation.
+8. Preserved all existing content, interactions, 20 methodologies, and eight featured illustrations.
+
+### Affected files
+
+- `methodologies.html` (CSS-only alignment and responsive refinements)
+- `WEBSITE_VERSION_HISTORY.md` (this version record)
+
+### Version commit
+
+- `5135310c7c1b434b4b10bfcc58d8cb231268a126`
+
+### Rollback instructions
+
+To return to **v1.0.0**, restore `methodologies.html` from commit `94d9582d94b80a794a77e99c55b08313ab9bb4f5` and commit that file onto `main`. Do not force-push or alter other files. The separate methodology guide was not changed in v1.0.1.
+
+---
+
 ## v1.0.0 — Restored baseline
 
 **Date:** 2026-10-27
