@@ -12,6 +12,31 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## v2.2.1 — Enhanced Data Protection six-stage illustrations (current)
+
+**Date:** 2026-10-28
+
+**Scope:** `methodology-data-protection-insider-risk.html` only. The other seven specialist pages and main gallery are unchanged.
+
+### Activities completed
+
+1. Replaced all six small outline phase icons (Discover data, Classify, Protect, Monitor, Investigate, Improve) with large custom vector illustrations inspired by the approved glowing green icon design.
+2. Added gradients, subtle glow backgrounds, dimensional highlights, shadows, distinct visual metaphors and image accessibility labels while keeping icons scalable.
+3. Enlarged icon size and card typography; refined card height, spacing, alignment and connecting arrows.
+4. Improved mobile and tablet spacing and responsive icon sizes.
+5. Preserved all methodology descriptions, use cases, deliverables, illustrative client story, contact links and published photographic hero banner.
+
+### Files and commits
+
+- Updated: `methodology-data-protection-insider-risk.html` — `6420654ab25ac8fe8ebc09b556ba21fc458bc973`
+- Updated: `WEBSITE_VERSION_HISTORY.md`
+
+### Rollback
+
+To restore the previous v2.2.0 icon layout, retrieve `methodology-data-protection-insider-risk.html` from commit `d81682d3ff7bd41f0b03ac35dbce55c0d1802a63` and commit the restored content to `main` without force-pushing. This change does not affect the other seven pages.
+
+---
+
 ## v2.2.0 — Publish the actual approved photographic banners (current)
 
 **Date:** 2026-10-28
