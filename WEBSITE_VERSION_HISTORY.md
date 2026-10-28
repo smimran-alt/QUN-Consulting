@@ -12,6 +12,26 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## v2.2.5 — Simplify signature methodology section
+
+**Date:** 2026-10-28
+
+**Status:** Current main-methodologies-page refinement.
+
+### Activities completed
+1. Removed the decorative “↶ CONTINUOUS IMPROVEMENT ↷” line beneath the signature six stages.
+2. Added consistent spacing before the “How our methodology works” detail cards.
+3. Preserved all six stage icons, their HTML links and descriptions, output labels (including the Optimize stage's “Continuous improvement plan”), all eight specialist links, and other page content.
+
+### Affected files
+- `methodologies.html` — commit `22de02c217744116f3d50ce5ae2c27f66fbe9eaa`
+- `WEBSITE_VERSION_HISTORY.md`
+
+### Rollback
+Restore `methodologies.html` from commit `ad700b4f87373c2f316e7d86f29618030e56622b` and commit the restored contents to `main` without force-pushing. Other pages are unchanged.
+
+---
+
 ## v2.2.4 — Semantic HTML signature methodology section (current)
 
 **Date:** 2026-10-28
