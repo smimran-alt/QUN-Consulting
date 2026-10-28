@@ -12,6 +12,49 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## v2.1.0 — Eight scientific consulting hero banners
+
+**Date:** 2026-10-28
+
+**Status:** Current specialist-page release. Main `methodologies.html` unchanged.
+
+### Activities completed
+
+1. Created eight new service-specific, responsive SVG banner assets in `assets/banners/`. Each uses the established forest-green, white, pale green and scientific-consulting visual identity, with topic-specific diagrams.
+2. Replaced the previous mountain photo background on all eight specialist methodology pages with the corresponding scientific consulting SVG banner.
+3. Ensured that page headings, descriptions and buttons remain legible over the new background; added mobile-specific image positioning and overlay.
+4. Preserved the six-stage infographics, assessment/use case/deliverable panels, illustrated case studies, and detailed service methodology.
+5. Retained the main Methodologies page and all eight links unchanged.
+6. Prepared a separate ZIP containing eight optimized image-generated photographic consulting banners. These JPG photographs are **not hosted in GitHub or used by the live website**; the GitHub pages currently use the published SVG banners. An image-upload-capable workflow is needed to replace the SVGs with the photographic JPGs.
+
+### Modified pages / update commits
+
+- `methodology-enterprise-cyber-risk.html` — `153a54d9fdca71c9f4e9800ab2ca5195cc03f731`
+- `methodology-iso-27001-isms.html` — `e19417fb4ccd4133bea73ea8708f9b8f3c842491`
+- `methodology-iso-42001-ai-governance.html` — `1126df806fdc21519715bf1a72913ee00d9bce31`
+- `methodology-penetration-testing.html` — `d8992c4ac8206b48ee5f67afc65433fbbbf64062`
+- `methodology-incident-response.html` — `3119ee69c06b1f40562659891d851993c01b02c0`
+- `methodology-zero-trust-architecture.html` — `e77728cfd2483e23a25f7b992d134ca8644fa88f`
+- `methodology-cyber-resilience.html` — `5aa86e2670ebc4e073902943bf8bd8a9af394881`
+- `methodology-data-protection-insider-risk.html` — `ca2ee947876c21202825dcc45ee7421f5e98debd`
+
+### New banner assets
+
+- `assets/banners/enterprise-cyber-risk-scientific.svg`
+- `assets/banners/iso-27001-isms-scientific.svg`
+- `assets/banners/iso-42001-ai-governance-scientific.svg`
+- `assets/banners/penetration-testing-scientific.svg`
+- `assets/banners/incident-response-scientific.svg`
+- `assets/banners/zero-trust-architecture-scientific.svg`
+- `assets/banners/cyber-resilience-scientific.svg`
+- `assets/banners/data-protection-insider-risk-scientific.svg`
+
+### Rollback to v2.0.0
+
+Restore the eight `methodology-*.html` pages from GitHub commit `89ecd0600b6838fc1516226bd963891c15eda6d7` and commit their restored contents to `main` without force pushing. The eight unused SVG assets may optionally be removed separately. Do not alter `methodologies.html`.
+
+---
+
 ## v2.0.0 — Transform eight specialist methodology pages to illustrated editorial design
 
 **Date:** 2026-10-28
