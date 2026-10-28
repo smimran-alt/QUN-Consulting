@@ -12,6 +12,39 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## v2.4.0 — Interactive specialist methodologies and Enterprise Cyber Risk infographic
+
+**Date:** 2026-10-28
+
+**Scope:** All eight dedicated specialist methodology pages. Main `methodologies.html` and the signature guide are unchanged.
+
+### Activities completed
+
+1. Redesigned the Enterprise Cyber Risk page with an original, responsive HTML/CSS illustrated risk-prioritization matrix and four-step business exposure/decision architecture. The illustrative risk zones are clearly labeled as examples, not actual client scores.
+2. Converted the six methodology stage cards on **each of eight specialist pages** into native, keyboard-accessible expandable `details`/ `summary` elements. Clicking a stage reveals why it matters, the consulting activity, evidence and expected outputs, and the decision needed to proceed.
+3. Wrote six enhanced, service-specific Enterprise Cyber Risk explanations covering business context, risk identification, risk analysis, treatment, executive oversight and continuous review.
+4. Made the 12 items in the **What we assess**, **Common use cases**, and **What clients receive** panels on **each of eight specialist pages** expandable with explanatory text.
+5. Improved the cards' hierarchy, larger green graphic containers, whitespace, borders, responsive layout and visible keyboard-focus state.
+6. Preserved all existing service-specific descriptions, illustrative client stories, photographic banners, contact buttons and previous detailed guide content.
+
+### Affected files and update commits
+
+- `methodology-enterprise-cyber-risk.html` — `5cdca493e3cc68c506f6f60c770e9d33d351250e`
+- `methodology-iso-27001-isms.html` — `a7b8be167a7fe2b8b07e89482bd4550d7c9e3ce4`
+- `methodology-iso-42001-ai-governance.html` — `5e0756a85deea87501912b9e244d0a07dfc13d6d`
+- `methodology-penetration-testing.html` — `59321cb48d18b626d216e50ced0043c767fcaed3`
+- `methodology-incident-response.html` — `15fb201062b9f1e66c4c9e1a1447ac31552e0e7a`
+- `methodology-zero-trust-architecture.html` — `ec9a7c628318d78fa76a2c541e42e0dfae9168f2`
+- `methodology-cyber-resilience.html` — `4141ee6c252834d31cb0963b3893affc1b2df71f`
+- `methodology-data-protection-insider-risk.html` — `cc385e603d22a4d90d359ef277d3981adc636d23`
+- `WEBSITE_VERSION_HISTORY.md` — version entry.
+
+### Rollback
+
+To restore the previous specialist page design (v2.3.0), retrieve each of the eight `methodology-*.html` files from the branch snapshot at commit `ab5eca880f7ab905c297e76086f9e14b100324cc` and commit the restored content to `main` without force-pushing. Leave the main `methodologies.html` and the six-stage detailed guide unchanged.
+
+---
+
 ## v2.3.0 — Detailed six-phase methodology content and infographic redesign
 
 **Date:** 2026-10-28
