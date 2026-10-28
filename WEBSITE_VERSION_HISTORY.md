@@ -12,6 +12,33 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## v2.1.1 — Static-site publishing refresh
+
+**Date:** 2026-10-28
+
+**Status:** Publication support update; live deployment not independently verified.
+
+### Activities completed
+
+1. Confirmed the eight updated specialist HTML pages and all eight SVG scientific banner assets exist in the repository's default `main` branch.
+2. Added a root `.nojekyll` file to disable Jekyll processing for a GitHub Pages branch-based static deployment and create a new deployment-triggering commit.
+3. Reconfirmed the `CNAME` file declares `qunconsulting.com`.
+4. Attempted public URL checks, but the public domain and asset URLs were inaccessible through available web checks; therefore no claim is made that GitHub Pages has published this version.
+5. Noted a visual difference: generated JPG photographic consulting banners are separate local assets and are **not installed on the website**. Website currently references service-specific SVG banners from v2.1.0.
+
+### Changed file
+
+- `.nojekyll` — created in commit `a86b812070ff4e6b5018986b18aed792ef28f359`.
+- `WEBSITE_VERSION_HISTORY.md` — log entry.
+
+### Troubleshooting and rollback
+
+- In GitHub repository **Settings → Pages**, confirm **Build and deployment → Deploy from a branch → main / (root)**, and custom domain `qunconsulting.com`. Inspect the latest Pages deployment for errors.
+- For a local test bypassing browser cache, open an affected page with `?v=211` appended and refresh; this does not override an out-of-date deployment.
+- To revert v2.1.1, remove `.nojekyll` in a new commit without force-pushing. The v2.1.0 HTML and SVG contents are unchanged.
+
+---
+
 ## v2.1.0 — Eight scientific consulting hero banners
 
 **Date:** 2026-10-28
