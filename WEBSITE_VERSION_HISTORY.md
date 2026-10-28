@@ -12,6 +12,33 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## v2.2.6 — Main Methodologies consulting hero refresh
+
+**Date:** 2026-10-28
+
+**Status:** Current main-Methodologies-page refinement. The public site could not be independently fetched, so this is verified against GitHub source and published asset only.
+
+### Activities completed
+
+1. Reviewed main `methodologies.html` HTML and CSS and found an outdated mountain photograph and crowded decorative hero labels that differed from the updated specialist-service imagery.
+2. Replaced the main mountain hero background with the already-published, actual QUN executive cybersecurity consulting JPG at `assets/banners/qun-enterprise-cyber-risk-banner.jpg`.
+3. Rebuilt the photo overlay, headline spacing, paragraph sizing, CTA sizing and responsive positioning for desktop/tablet/mobile.
+4. Replaced four scattered image callouts with one restrained, high-contrast strategy/risk/assurance caption on desktop.
+5. Improved hero introduction and CTA wording to emphasize business-led cybersecurity outcomes.
+6. Corrected the page's SEO description to refer to the **eight** featured specialist methodologies instead of the removed 20-entry library.
+7. Preserved all six clickable signature stages, the six detailed methodology cards, all eight specialist page links and the remainder of the approved layout.
+
+### Affected files and exact commit
+
+- `methodologies.html` — `cc6955e96aac9c241648a87bd3d324d990e3c1a2`
+- `WEBSITE_VERSION_HISTORY.md` — this history entry.
+
+### Rollback to v2.2.5
+
+Restore `methodologies.html` from GitHub commit `7606af4ae82b5321ba58e1bbd715e9a6b5897f84` and commit restored contents to `main` without force-pushing. This restores the original mountain hero and earlier copy while retaining the pre-existing method page state.
+
+---
+
 ## v2.2.5 — Simplify signature methodology section
 
 **Date:** 2026-10-28
