@@ -12,6 +12,36 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## v1.1.4 — Methodologies page content and image improvement
+
+**Date:** 2026-10-27
+
+**Status:** Current
+
+### Activities completed
+
+1. Rewrote the hero introduction to emphasize business outcomes, risk-based decisions, practical safeguards, and measurable improvement.
+2. Clarified how the six-stage delivery framework translates assessment findings into decisions and client deliverables.
+3. Refined the service-library introduction and the final contact call to action.
+4. Replaced all eight featured service-card summaries with service-specific, client-facing value propositions.
+5. Improved all eight featured vector illustrations with layered green artwork, larger image areas and higher visual emphasis.
+6. Improved hero photo treatment, readability, typography, card spacing and responsive presentation.
+7. Added a concise three-principle strip: Business-first, Evidence-led, Action-oriented.
+8. Kept the eight service-detail page links, separate methodology guide and overall page structure intact.
+
+### Affected files
+
+- `methodologies.html`
+- `WEBSITE_VERSION_HISTORY.md`
+
+### GitHub commit and rollback
+
+- Page update: `ef2797c8a24718b22df53a67f6e216b4ee6d41a7`
+- To restore **v1.1.3**, restore `methodologies.html` from commit `c11346fc426018a81387d2d222333499c7dbe97e` and commit the restored file to `main`. This leaves all dedicated service pages unchanged. Do not force-push.
+- The artwork comprises editable, scalable SVG illustrations rather than raster image files.
+
+---
+
 ## v1.1.3 — Remove detailed 20-methodology gallery
 
 **Date:** 2026-10-27
