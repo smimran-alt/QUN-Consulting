@@ -61,6 +61,44 @@ header{position:sticky;top:0;background:#fffffffa;z-index:99;border-bottom:1px s
 .all-methods-content{scroll-margin-top:130px}
 @media(max-width:1100px){.library .featured{grid-template-columns:repeat(2,minmax(0,1fr))!important}.library .feature{min-height:178px!important}.library .feature h3{font-size:19px!important}}
 @media(max-width:620px){.library .featured{grid-template-columns:1fr!important}.library>.section-heading{grid-template-columns:1fr!important}.library-heading-aside{align-items:flex-start}.library .feature{min-height:170px!important}.library .feature-copy{max-width:67%!important}.library .feature-art{max-width:170px!important}}
+
+/* QUN refined detailed methodology gallery — roomy editorial layout */
+.all-methods{margin-top:27px!important;border-top:1px solid #dfe8e1!important}
+.all-methods>summary{font-size:14px!important;padding:20px 2px!important;letter-spacing:.1px}
+.all-methods-content{padding:14px 0 26px!important;scroll-margin-top:100px}
+.all-methods .library-controls{margin:0 0 16px!important;gap:20px}
+.all-methods .search{min-height:50px;width:min(640px,100%);background:#fbfdfb;border:1px solid #d8e6dd;border-radius:6px;padding:12px 15px}
+.all-methods .search input{font-size:14px!important}
+.all-methods .result-count{font-size:13px!important;color:#4c6957!important}
+.all-methods .filters{margin:0 0 25px!important;gap:9px!important;flex-wrap:wrap!important}
+.all-methods .filter{font-size:12px!important;padding:10px 16px!important;border-radius:5px!important}
+.all-methods .filter.active{background:#0d5c42!important;color:#fff!important}
+.all-methods .method-grid{display:grid!important;grid-template-columns:1fr!important;gap:24px!important}
+.all-methods .method{display:grid!important;grid-template-columns:minmax(270px,.82fr) minmax(0,1.25fr)!important;grid-template-rows:auto auto 1fr auto!important;column-gap:30px!important;row-gap:0!important;padding:30px!important;min-width:0!important;background:#fff!important;border:1px solid #dae7df!important;border-radius:12px!important;box-shadow:0 6px 28px #0a382017!important;transition:box-shadow .2s,border-color .2s}
+.all-methods .method:hover{border-color:#a8cdb6!important;box-shadow:0 15px 34px #0d3e251e!important}
+.all-methods .method[hidden]{display:none!important}
+.all-methods .method .heading{grid-column:1!important;grid-row:1!important;display:flex;align-items:center;justify-content:space-between;align-self:start;margin-bottom:10px}
+.all-methods .method .number{font-size:14px!important;color:#26704e!important;letter-spacing:1px}
+.all-methods .method .tag{font-size:12px!important;padding:8px 12px!important;background:#eff7f0!important;color:#315f45!important}
+.all-methods .method h3{grid-column:1!important;grid-row:2!important;font-family:Georgia,'Times New Roman',serif!important;font-size:clamp(29px,3vw,42px)!important;line-height:1.12!important;letter-spacing:-1.15px!important;margin:12px 0 22px!important;color:#0b3023!important}
+.all-methods .method .infographic{grid-column:2!important;grid-row:1 / span 4!important;min-width:0!important;width:100%!important;min-height:325px!important;margin:0!important;padding:14px 17px 8px!important;background:radial-gradient(ellipse at 48% 30%,#1d5545,#092e28 78%)!important;border:1px solid #285747!important;border-radius:10px!important;display:flex!important;flex-direction:column!important;position:relative!important;overflow:hidden!important}
+.all-methods .method .infographic-head{padding:8px 7px 0!important;display:flex!important;gap:13px!important}
+.all-methods .method .infographic-head strong{font-size:18px!important;color:#fff!important;line-height:1.25}
+.all-methods .method .infographic-head small{font-size:11px!important;letter-spacing:1.35px!important;color:#c2e3cd!important}
+.all-methods .method .infographic-symbol{height:51px!important;width:51px!important;flex:0 0 51px!important;background:#285e4a!important}
+.all-methods .method .infographic-symbol svg{height:35px!important;width:35px!important}
+.all-methods .method .infographic>svg[role="img"]{display:block!important;min-width:0!important;width:100%!important;height:auto!important;max-height:255px!important;flex:1 1 auto}
+.all-methods .method .infographic figcaption{font-size:12px!important;color:#e1f1e4!important;padding:8px 7px 52px!important;margin-top:auto!important}
+.all-methods .method .expand-diagram{right:17px!important;bottom:14px!important;background:#d7efc1!important;color:#123c29!important;border:0!important;border-radius:5px!important;padding:10px 14px!important;font-size:12px!important;min-height:38px!important}
+.all-methods .method .phase-details{grid-column:1!important;grid-row:3!important;border-top:1px solid #e2eae4!important;margin:0!important;align-self:start}
+.all-methods .method .phase-details summary{font-size:14px!important;padding:14px 0!important;color:#0d6645!important}
+.all-methods .method .steps{gap:7px!important}
+.all-methods .method .step{font-size:12px!important;padding:8px 10px!important;border:1px solid #e0eae3!important}
+.all-methods .method .deliver{grid-column:1!important;grid-row:4!important;margin-top:16px!important;padding-top:16px!important;border-top:1px solid #e2eae4!important}
+.all-methods .method .deliver strong{font-size:11px!important;letter-spacing:1.2px!important;text-transform:uppercase!important;color:#36764f!important}
+.all-methods .method .deliver p{font-size:15px!important;line-height:1.65!important;color:#405549!important;margin:7px 0!important}
+@media(max-width:900px){.all-methods .method{grid-template-columns:1fr!important;grid-template-rows:auto!important;gap:0!important;padding:22px!important}.all-methods .method .heading,.all-methods .method h3,.all-methods .method .infographic,.all-methods .method .phase-details,.all-methods .method .deliver{grid-column:1!important;grid-row:auto!important}.all-methods .method .infographic{margin:5px 0 22px!important}.all-methods .method h3{font-size:32px!important;margin-bottom:16px!important}}
+@media(max-width:560px){.all-methods .method{padding:16px!important;border-radius:9px!important}.all-methods .method h3{font-size:28px!important}.all-methods .method .infographic{min-height:260px!important;padding:10px!important}.all-methods .method .infographic-head strong{font-size:14px!important}.all-methods .method .infographic-symbol{width:39px!important;height:39px!important;flex-basis:39px!important}.all-methods .method .infographic>svg[role="img"]{max-height:225px!important}.all-methods .method .infographic figcaption{font-size:10px!important}.all-methods .method .expand-diagram{font-size:11px!important}}
 </style></head><body>
 <header><nav class="wrap" aria-label="Main navigation"><a class="brand" href="/" aria-label="QUN Consulting">QUN<small>CONSULTING</small></a><button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="links" aria-label="Toggle navigation"><span></span><span></span><span></span></button><div class="links" id="links"><a href="/">Home</a><a href="/services.html">Services</a><a href="/methodologies.html" aria-current="page">Our Methodologies</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a class="nav-cta" href="/contact.html">Get in touch ↗</a></div></nav></header>
 <main><section class="hero"><div class="wrap hero-inner"><div class="hero-copy"><div class="eyebrow">STRATEGY / RISK / ASSURANCE / RESILIENCE</div><h1>Clarity in complexity.<br><em>Confidence in action.</em></h1><p>QUN combines cybersecurity strategy, risk insight and evidence-based assurance to help organizations understand their exposure, make informed decisions and strengthen resilience for a more secure tomorrow.</p><div class="hero-actions"><a class="button" href="#methodology-library">Our Methodologies →</a><a class="secondary" href="#approach">Explore our approach ↗</a></div></div><div class="hero-annotations" aria-hidden="true"><span class="note a">GOVERNANCE<br>& STRATEGY</span><span class="note b">RISK<br>INSIGHT</span><span class="note c">TECHNICAL<br>ASSURANCE</span><span class="note d">SUSTAINABLE<br>RESILIENCE</span></div></div></section>
