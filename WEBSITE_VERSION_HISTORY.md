@@ -12,6 +12,23 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## v2.4.1 — Enterprise Cyber Risk panel icons refined after rollback
+
+**Date:** 2026-10-28
+
+### Activities completed
+1. Updated the **What we assess**, **Common use cases**, and **What clients receive** panels on `methodology-enterprise-cyber-risk.html`.
+2. Replaced twelve repeated miniature outline icons with twelve distinct, relevant inline SVG symbols, covering services/assets, threat analysis, control grids, business impact, enterprise risk, risk appetite, transformation, prioritization, register, dashboard, roadmap and ownership.
+3. Added 76px softly shaded mint-green icon containers, 53px forest-green drawings, discreet shadows and consistent vertical spacing.
+4. Adjusted heading, description and responsive icon sizing for tablets and phones, while preserving every panel description and the restored non-expandable design.
+5. Left the other seven specialist pages and all photographic banners unchanged.
+
+### Changes and rollback
+- Page commit: `2e376f3ee3d3b05e0df514dcde0f4cb2ce20f64c`.
+- To restore the icons from before this refinement, retrieve `methodology-enterprise-cyber-risk.html` from repository snapshot `449fb57fe13128953f981683eeed61c80636d96e` and commit it on `main` without force-pushing.
+
+---
+
 ## Rollback — Restore specialist methodology pages before v2.4.0 (current)
 
 **Date:** 2026-10-28
