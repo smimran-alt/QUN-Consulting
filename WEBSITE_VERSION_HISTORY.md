@@ -12,6 +12,53 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## v2.2.0 — Publish the actual approved photographic banners (current)
+
+**Date:** 2026-10-28
+
+**Status:** Eight original JPG banners committed, all eight specialist pages updated; public live deployment not independently verified.
+
+### Activities completed
+
+1. Published the **exact eight photographic consulting banner JPGs previously generated and shown to the user**, not SVG substitutes, into `assets/banners/`.
+2. Updated all eight dedicated specialist methodology pages to reference their matching JPG backgrounds, replacing the prior SVG hero illustration paths on both desktop and mobile.
+3. Retained the existing white gradient for heading readability and responsive hero positioning.
+4. Added a `?v=220` cache-busting parameter to each banner URL.
+5. Confirmed the eight JPG binary blobs exist in the committed Git tree and verified both CSS references on each of the eight pages.
+6. Left the main `methodologies.html`, specialist methodology content, stage diagrams, use cases and client stories unchanged.
+
+### Binary asset publishing commit
+
+- `4cd4447af71e44da26e093d2560782e0fe90da93`
+
+### Published JPG asset paths
+
+- `assets/banners/qun-enterprise-cyber-risk-banner.jpg`
+- `assets/banners/qun-iso-27001-isms-banner.jpg`
+- `assets/banners/qun-iso-42001-ai-governance-banner.jpg`
+- `assets/banners/qun-penetration-testing-banner.jpg`
+- `assets/banners/qun-incident-response-banner.jpg`
+- `assets/banners/qun-zero-trust-architecture-banner.jpg`
+- `assets/banners/qun-cyber-resilience-banner.jpg`
+- `assets/banners/qun-data-protection-insider-risk-banner.jpg`
+
+### HTML page update commits
+
+- Enterprise Cyber Risk — `fba47517a3d4e5c613a762d80ccb7de0b06ad591`
+- ISO 27001 ISMS — `88ffdda409815733208e8e92d35addceba6a9acf`
+- ISO 42001 AI Governance — `01faf0b0732fdf6951cb29f67f57a39d0a4299ba`
+- Penetration Testing — `9a0d725b33f5c3cdc6cb1e385942990a2c2ef3a7`
+- Incident Response — `b1a80aea18d71e6ae9d1de8392b3c7e7fbc83a1a`
+- Zero Trust Architecture — `f5e86d92f28b68eb5388a25ce08d1ea162d55ee1`
+- Cyber Resilience — `047da67e8b9ddd03a46a3d632d6e3a2a8475eafe`
+- Data Protection & Insider Risk — `dcf124435d1a6ff48b985607b3320b6e65a2ca0d`
+
+### Rollback to v2.1.1
+
+Restore the eight `methodology-*.html` files from GitHub commit `7de1726c61c05d7f1fcaacd45209c79c85ec7fd3` into new commits on `main`; this returns their banner references to the earlier scientific SVG images. The JPG files can remain as unused assets or be removed in a separate commit. Do not force-push.
+
+---
+
 ## v2.1.1 — Static-site publishing refresh
 
 **Date:** 2026-10-28
