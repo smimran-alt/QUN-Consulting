@@ -111,6 +111,74 @@ header{position:sticky;top:0;background:#fffffffa;z-index:99;border-bottom:1px s
 .explain-readmore{margin-top:22px;text-align:right}
 .explain-readmore a{display:inline-flex;gap:12px;align-items:center;background:#0d6142;color:#fff;font-size:13px;font-weight:800;border-radius:30px;padding:13px 19px}
 .explain-readmore a:hover{background:#0b432f}
+
+/* QUN WEBSITE v1.0.1 | orientation & alignment refinement */
+html{scroll-padding-top:88px}
+.wrap{width:100%;max-width:1360px;margin-inline:auto;padding-inline:clamp(22px,4.3vw,64px)}
+.hero-inner{align-items:center;gap:clamp(20px,3vw,54px)}
+.hero-copy{align-self:center}
+.hero-actions{align-items:center;flex-wrap:wrap;row-gap:13px}
+.hero-annotations{align-self:stretch}
+.section{padding-top:clamp(40px,5vw,64px)}
+.section-heading{display:grid;grid-template-columns:minmax(0,1.42fr) minmax(240px,.78fr);gap:clamp(24px,4vw,70px);align-items:end}
+.section-heading>h2{max-width:820px;margin-bottom:8px}
+.section-heading>p{max-width:430px;margin:0 0 10px;line-height:1.68}
+.stages{grid-template-columns:repeat(6,minmax(0,1fr));align-items:stretch;gap:clamp(10px,1.3vw,20px)}
+.stage{min-width:0;height:100%;justify-content:flex-start}
+.stage-symbol{flex:0 0 115px}
+.stage h3{min-height:27px;margin-top:6px}
+.stage p{min-height:84px;max-width:205px;margin-inline:auto}
+.stage-output{margin-top:auto;min-height:77px;display:flex;flex-direction:column;justify-content:center}
+.continuous{margin-top:18px}
+.explain-section{margin-top:28px;padding:clamp(20px,2.6vw,35px);background:#f4f8f5}
+.explain-section .section-heading{margin-bottom:20px}
+.explain-grid{grid-template-columns:repeat(6,minmax(0,1fr));align-items:stretch;gap:clamp(9px,1vw,15px)}
+.explain{min-height:254px;height:100%;padding:clamp(12px,1.3vw,18px)}
+.explain h3{line-height:1.2}
+.explain p{line-height:1.65}
+.explain footer{margin-top:auto}
+.library>.section-heading{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(230px,.65fr);align-items:end;gap:30px}
+.library-heading-aside{align-items:flex-start;text-align:left;padding-bottom:4px}
+.library .featured{align-items:stretch;grid-auto-rows:minmax(175px,auto)}
+.library .feature{height:100%;min-height:175px!important}
+.library .feature-copy{display:flex;flex-direction:column;align-items:flex-start;min-width:0}
+.library .feature h3{overflow-wrap:break-word}
+.library .feature p{max-width:185px}
+.library .feature-arrow{margin-top:auto;position:relative!important;left:auto!important;bottom:auto!important;flex-shrink:0}
+.library .feature-art{right:5px!important;bottom:7px!important}
+.all-methods .method{align-items:stretch}
+.all-methods .method .heading,.all-methods .method h3,.all-methods .method .phase-details,.all-methods .method .deliver{min-width:0}
+.all-methods .method .infographic{min-width:0}
+.all-methods .method .infographic svg[role="img"]{max-width:100%;height:auto}
+@media(max-width:1150px){
+ .stages{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+ .stage p{min-height:58px}
+ .stage-output{min-height:70px}
+ .explain-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .explain{min-height:225px}
+ .library .featured{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:850px){
+ .section-heading,.library>.section-heading{grid-template-columns:1fr;gap:10px;align-items:start}
+ .section-heading>p{max-width:680px;margin:0}
+ .hero-inner{display:block}
+ .hero-annotations{display:none}
+ .library .feature{min-height:180px!important}
+}
+@media(max-width:600px){
+ .wrap{padding-inline:20px}
+ .stages{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 10px}
+ .stage-symbol{flex-basis:103px}
+ .stage p{min-height:84px}
+ .stage-output{min-height:84px}
+ .explain-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+ .explain{min-height:246px;padding:12px 10px}
+ .library .featured{grid-template-columns:1fr!important;grid-auto-rows:auto}
+ .library .feature{min-height:175px!important}
+ .library .feature p{max-width:240px}
+ .all-methods .method{padding:17px!important}
+ .all-methods .method .infographic{width:100%!important}
+}
 </style></head><body>
 <header><nav class="wrap" aria-label="Main navigation"><a class="brand" href="/" aria-label="QUN Consulting">QUN<small>CONSULTING</small></a><button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="links" aria-label="Toggle navigation"><span></span><span></span><span></span></button><div class="links" id="links"><a href="/">Home</a><a href="/services.html">Services</a><a href="/methodologies.html" aria-current="page">Our Methodologies</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a class="nav-cta" href="/contact.html">Get in touch ↗</a></div></nav></header>
 <main><section class="hero"><div class="wrap hero-inner"><div class="hero-copy"><div class="eyebrow">STRATEGY / RISK / ASSURANCE / RESILIENCE</div><h1>Clarity in complexity.<br><em>Confidence in action.</em></h1><p>QUN combines cybersecurity strategy, risk insight and evidence-based assurance to help organizations understand their exposure, make informed decisions and strengthen resilience for a more secure tomorrow.</p><div class="hero-actions"><a class="button" href="#methodology-library">Our Methodologies →</a><a class="secondary" href="#approach">Explore our approach ↗</a></div></div><div class="hero-annotations" aria-hidden="true"><span class="note a">GOVERNANCE<br>& STRATEGY</span><span class="note b">RISK<br>INSIGHT</span><span class="note c">TECHNICAL<br>ASSURANCE</span><span class="note d">SUSTAINABLE<br>RESILIENCE</span></div></div></section>
