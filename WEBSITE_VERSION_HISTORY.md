@@ -12,6 +12,26 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## v2.2.4 — Semantic HTML signature methodology section (current)
+
+**Date:** 2026-10-28
+
+### Activities completed
+1. Converted six signature methodology stages from static article blocks into semantic, keyboard-accessible HTML links directly to their corresponding detailed guide phases.
+2. Kept six inline SVG icons (not raster screenshots) for crisp, scalable visual rendering.
+3. Improved QUN green icon circles, type sizes, descriptions, stage numbering, outcome boxes and section hierarchy.
+4. Refined layout to six columns desktop, three tablet and two mobile, with keyboard focus and reduced-motion considerations.
+5. Preserved all six phase labels, descriptions, outputs, detailed guide, service cards and page content.
+
+### Changed files / commits
+- `methodologies.html` — `743c6916ea45906c07527f847835d609973574ee`
+- `WEBSITE_VERSION_HISTORY.md` — version record.
+
+### Rollback
+Restore `methodologies.html` from GitHub commit `03dcf7d16fdd5e9cc53e52f46f86b845d79ca18e` (before the v2.2.4 change), then commit restored content to `main` without force-pushing. Specialist methodology pages remain unchanged.
+
+---
+
 ## v2.2.3 — Main methodology six-card icon upgrade
 
 **Date:** 2026-10-28
