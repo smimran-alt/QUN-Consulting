@@ -12,6 +12,32 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## v2.2.3 — Main methodology six-card icon upgrade
+
+**Date:** 2026-10-28
+
+**Status:** Current main Methodologies page visual refinement.
+
+### Activities completed
+
+1. Enlarged the six **How our methodology works** card icons from 39px circles with 25px graphics to 65px soft-green rounded icon containers with 39px forest-green SVG graphics.
+2. Added QUN brand-consistent mint gradients, subtle inner strokes and restrained shadows.
+3. Improved card padding, vertical rhythm, heading and description typography, deliverable labels and overall visual hierarchy.
+4. Refined responsive layout to three cards per row on mid-sized screens, two on smaller screens, and single-column on narrow phones.
+5. Preserved all six phase links to the detailed methodology guide and all original card content.
+6. Did not alter any of the eight specialist methodology pages, images, client scenarios or service links.
+
+### Modified files and commits
+
+- `methodologies.html` — `144480c0bff6b2ab28b3bbca52eec023fdd3504c`
+- `WEBSITE_VERSION_HISTORY.md` — this entry.
+
+### Rollback
+
+To revert only this icon refinement, restore `methodologies.html` from commit `21341ee9861813825a459697ecb3821a4753ff06` (snapshot immediately prior to v2.2.3) and commit that prior content to `main` without force-pushing. Specialist pages remain unaffected.
+
+---
+
 ## v2.2.2 — Larger themed icons in Data Protection information panels
 
 **Date:** 2026-10-28
