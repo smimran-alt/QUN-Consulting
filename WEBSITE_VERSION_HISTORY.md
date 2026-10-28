@@ -12,6 +12,33 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## v2.3.0 — Detailed six-phase methodology content and infographic redesign
+
+**Date:** 2026-10-28
+
+**Status:** Current detailed methodology guide release; main `methodologies.html` and specialist pages unchanged.
+
+### Activities completed
+
+1. Rewrote the substantive explanations for Discover, Assess, Design, Implement, Validate and Optimize, focusing on business purpose, consulting activities, evidence, deliverables and governance decisions.
+2. Expanded each phase into five specific consulting activities, three practical evidence sources, three client deliverables and a distinct decision gate.
+3. Replaced six prior SVG infographics with stage-specific decision-focused diagrams: business context relationships, exposure prioritization matrix, target-state design layers, controlled implementation sequence, validation and sign-off pathway, and ongoing measurement and learning cycle.
+4. Added clear diagram headers, stage acceptance outcomes, accessible image descriptions and responsive scaling.
+5. Improved reading hierarchy, body and diagram spacing, decision-box prominence and mobile layout.
+6. Retained page navigation, the illustrated six-stage overview, service links, brand theme, and the existing call to action.
+7. Preserved the important distinction between illustrative consulting methodology and confirmed results for a particular client.
+
+### Affected files and commit
+
+- `how-our-methodology-works.html` — `4cbbde7d88111e064a222e183dd97528338ad41c`
+- `WEBSITE_VERSION_HISTORY.md` — current record
+
+### Rollback
+
+Restore `how-our-methodology-works.html` from the repository snapshot at commit `5be5b3f56ed8a16b35f18f4fced693e8399d3fba` (prior to the v2.3.0 guide update), then commit that content to `main` without force-pushing. Other site pages remain unchanged.
+
+---
+
 ## v2.2.6 — Main Methodologies consulting hero refresh
 
 **Date:** 2026-10-28
