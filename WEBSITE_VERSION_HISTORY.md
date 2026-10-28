@@ -12,6 +12,35 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## v1.1.3 — Remove detailed 20-methodology gallery
+
+**Date:** 2026-10-27
+
+**Status:** Current
+
+### Activities completed
+
+1. Removed the large 20-card detailed methodology gallery shown below the eight featured methodology cards on `methodologies.html`.
+2. Removed its search box, capability filters, result counter, and 'Explore all 20 methodologies' expandable control.
+3. Removed now-unused diagram expansion modal and supporting JavaScript.
+4. Preserved the eight illustrated featured methodology cards and their dedicated service-detail page links.
+5. Kept the signature six-stage methodology and the 'How Our Methodology Works' guide intact.
+6. Linked the library heading's supporting action to the existing delivery-approach guide.
+7. Kept the responsive mobile navigation functionality.
+
+### Affected files
+
+- `methodologies.html`
+- `WEBSITE_VERSION_HISTORY.md`
+
+### Commit and rollback
+
+- Main page update commit: `56ee600ce7021e11a0eb8b4c996ababfb961a744`.
+- To revert this change and restore **v1.1.2**, restore `methodologies.html` from commit `247c61b8a0d1d16a8ebdebe2ece6bd02c306c4b0` (state just before v1.1.3), and commit its contents to `main` without force pushing.
+- Other pages are unchanged.
+
+---
+
 ## v1.1.2 — Visual transformation of How Our Methodology Works
 
 **Date:** 2026-10-27
