@@ -12,6 +12,25 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## Rollback — Restore specialist methodology pages before v2.4.0 (current)
+
+**Date:** 2026-10-28
+
+### Activities completed
+1. Reverted all eight `methodology-*.html` specialist pages to the exact GitHub repository snapshot at `ab5eca880f7ab905c297e76086f9e14b100324cc`.
+2. Removed the v2.4.0 expandable six-stage cards and 12 expandable information items per page, plus the added Enterprise Cyber Risk HTML risk matrix.
+3. Restored the earlier static six-stage presentation, assessment/use-case/deliverable panels and their content.
+4. Kept the previously approved photographic hero banners and illustrative client stories.
+5. Left the main `methodologies.html` and `how-our-methodology-works.html` pages unchanged.
+6. Verified all eight pages no longer contain the v2.4.0 interactive HTML changes.
+
+### Rollback reference
+- Restored source snapshot: `ab5eca880f7ab905c297e76086f9e14b100324cc`
+- Individual rollback commits are recorded in GitHub history on `main`.
+- To reapply v2.4.0 later, retrieve the specialist page snapshots from commit `3f8ab2c6e94c079e96767a6758e2dc3a592df16a` and commit the intended content without force-pushing.
+
+---
+
 ## v2.4.0 — Interactive specialist methodologies and Enterprise Cyber Risk infographic
 
 **Date:** 2026-10-28
