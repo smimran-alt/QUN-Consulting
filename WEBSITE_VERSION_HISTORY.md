@@ -12,6 +12,56 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## v1.1.0 — Eight dedicated specialist methodology pages
+
+**Date:** 2026-10-27
+
+**Status:** Current
+
+### Activities performed
+
+1. Created a standalone page for each of the eight featured methodologies: Enterprise Cyber Risk; ISO 27001 ISMS; ISO 42001 AI Governance; Penetration Testing; Incident Response; Zero Trust Architecture; Cyber Resilience; Data Protection & Insider Risk.
+2. Wrote a structured six-stage service-specific delivery approach with a vector process infographic on every page.
+3. Added four practical use cases and typical client deliverables per service.
+4. Added a three-part **fictional illustrative client scenario** on every page: client pain point, how QUN would help, and potential value. These are **not** claims of real QUN client engagements or verified results.
+5. Connected each of the eight featured cards on `methodologies.html` to its dedicated page.
+6. Preserved the original 20-entry detailed methodology library, page search, filters, and existing signature delivery sections.
+7. Kept the white, forest-green and lime-green QUN visual design and responsive navigation.
+
+### Affected files
+
+- `methodologies.html`
+- `methodology-enterprise-cyber-risk.html`
+- `methodology-iso-27001-isms.html`
+- `methodology-iso-42001-ai-governance.html`
+- `methodology-penetration-testing.html`
+- `methodology-incident-response.html`
+- `methodology-zero-trust-architecture.html`
+- `methodology-cyber-resilience.html`
+- `methodology-data-protection-insider-risk.html`
+- `WEBSITE_VERSION_HISTORY.md`
+
+### GitHub commits
+
+- Main methodology page: `6a98d8715effe0aee972c7c0fb08b10f5df8246a`
+- Enterprise Cyber Risk: `cf63f0a6e9cddaeed82c89d22946aaa5a17e3c07`
+- ISO 27001 ISMS: `fd6f1c2f4a1b3e74ca17c59f83f2a19ffd3274da`
+- ISO 42001 AI Governance: `55c099669e16dbedddcfff8947db9afad07adc33`
+- Penetration Testing: `e0103aa057424fe675efa17f3733eb6962ad368e`
+- Incident Response: `060afee6f463f43c8da339c89814baa27d1390aa`
+- Zero Trust Architecture: `fb299367cb5509a8bb70d89e4b7a5edf20857efa`
+- Cyber Resilience: `9e96b7b554cd36c1140ac74fcad2c591082dafa8`
+- Data Protection & Insider Risk: `8974934df9e80fef8a36a0cddb34776994623c89`
+
+### Rollback to v1.0.1
+
+1. Restore `methodologies.html` to the content at the v1.0.1 commit `5135310c7c1b434b4b10bfcc58d8cb231268a126` (prior to the eight-page links).
+2. Optionally delete the eight `methodology-*.html` pages created for v1.1.0 if complete removal is requested; leaving unlinked pages does not change the primary website.
+3. Commit the rollback on `main` without force-pushing or rewriting history.
+4. Record the rollback as a new version entry.
+
+---
+
 ## v1.0.1 — Orientation and alignment refinement
 
 **Date:** 2026-10-27
