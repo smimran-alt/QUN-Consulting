@@ -12,6 +12,32 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## v2.2.2 — Larger themed icons in Data Protection information panels
+
+**Date:** 2026-10-28
+
+**Status:** Current specialist-page refinement.
+
+### Activities completed
+
+1. Updated the twelve icons across **What we assess**, **Common use cases**, and **What clients receive** on `methodology-data-protection-insider-risk.html`.
+2. Enlarged icons from small inline symbols to 84-pixel framed areas with 61-pixel SVG artwork on desktop, adapting to smaller screens.
+3. Added soft mint-to-green backgrounds, darker QUN forest-green strokes, subtle depth, consistent icon containers, and accessible reduced-motion styling.
+4. Improved panel spacing, heading hierarchy, body copy and responsive layouts.
+5. Preserved all existing page content, six methodology stages, photographic hero banner, links, and illustrative client story.
+
+### Affected files
+
+- `methodology-data-protection-insider-risk.html`
+- `WEBSITE_VERSION_HISTORY.md`
+
+### GitHub update and rollback
+
+- Page update commit: `6bf7523690f48d1ad34249dd73a2b876efa76565`.
+- Roll back the information-panel icon changes by restoring `methodology-data-protection-insider-risk.html` from commit `0815d4fa1ce81274afa62424fa9584a0953e4dbb` and committing to `main` without force-pushing. The other specialist pages are unaffected.
+
+---
+
 ## v2.2.1 — Enhanced Data Protection six-stage illustrations (current)
 
 **Date:** 2026-10-28
