@@ -12,6 +12,32 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## Rollback — v1.1.4 → v1.1.3 (current)
+
+**Date:** 2026-10-27
+
+**Status:** v1.1.3 restored as active Methodologies page
+
+### Activities completed
+
+1. Restored `methodologies.html` exactly to its v1.1.3 content.
+2. Reversed the v1.1.4 hero copywriting, featured-service descriptions, enlarged illustration treatments and three-principle strip.
+3. Preserved all eight featured service cards and links to their dedicated methodology pages.
+4. Kept the long 20-card technical gallery removed, as specified by v1.1.3.
+5. Left all other website pages unchanged.
+
+### GitHub rollback commit
+
+- `ce73598841002675f7c5365fc9e885a6518e6d68`
+
+### Restore options
+
+- To return to v1.1.4, restore `methodologies.html` from commit `8b8a7e188801f644844461d05c9757c445091b91`.
+- To return to v1.1.3 again, restore `methodologies.html` from commit `ce73598841002675f7c5365fc9e885a6518e6d68`.
+- Commit a rollback on `main`; do not force-push.
+
+---
+
 ## Rollback — v1.1.5 → v1.1.4 (current)
 
 **Date:** 2026-10-27
