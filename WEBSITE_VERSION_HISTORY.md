@@ -12,6 +12,45 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## v2.0.0 — Transform eight specialist methodology pages to illustrated editorial design
+
+**Date:** 2026-10-28
+
+**Status:** Current specialist-page release. Main `methodologies.html` remains at v1.1.3.
+
+### Activities completed
+
+1. Rebuilt eight specialist methodology pages to closely follow the approved visual references: full-width mountain-image hero, oversized editorial typography, white and green design, service-specific benefit labels and clear calls to action.
+2. Replaced isolated hero diagrams with an illustrated six-step methodology row for each service. Every stage includes an icon, stage name and practical description.
+3. Added three editorial information panels to each page: **What we assess**, **Common use cases**, and **What clients receive**, populated with service-specific content.
+4. Retained each page's illustrative client scenario with three distinct parts: client pain point, how QUN would help and potential outcome, plus an explicit note that examples are fictional.
+5. Added a landscape-backed **Business-first / Evidence-led / Action-oriented** principles panel.
+6. Kept the original in-depth stage descriptions and detailed deliverables in an expandable section for readers seeking greater depth.
+7. Applied responsive layout rules to adapt phase cards and information panels across desktop, tablet and mobile.
+8. Preserved the navigation and contact calls to action. The main gallery's approved v1.1.3 layout is unchanged.
+
+### Affected files and commits
+
+- `methodology-enterprise-cyber-risk.html` — `cfccb57f028af506bf585fd7a1d67926f1faf051`
+- `methodology-iso-27001-isms.html` — `2847d6ee5c53a3a6ca38545a02a8e7dc87378cbf`
+- `methodology-iso-42001-ai-governance.html` — `5da2010b4b28fb34829b4df277f4b4344fa4c679`
+- `methodology-penetration-testing.html` — `098a0776e48be5167565fa6fcad50f9d9d5a9f18`
+- `methodology-incident-response.html` — `bbda79dd1963d75e37595141ec2f4242570410d3`
+- `methodology-zero-trust-architecture.html` — `f19f83e2ccd5746bf703835d4c3520aefb9a2e80`
+- `methodology-cyber-resilience.html` — `81c515688f45c56eebaf86dc8b51c4ec5f8b24db`
+- `methodology-data-protection-insider-risk.html` — `6e16adb789e8e6b377c218e39bdda3c07b546f86`
+- `WEBSITE_VERSION_HISTORY.md`
+
+### Visual implementation note
+
+The live HTML pages reproduce the reference layout through CSS, scalable custom vector icons, and an external mountain photo. The previously generated static reference images were used as visual direction and have not been embedded as full-page bitmaps.
+
+### Rollback to v1.2.0
+
+Restore the eight `methodology-*.html` files from commit `6c2dca5dbb63d62f815d55bc13dacfd0f83c269d`, which contains the prior eight-page state, then commit them on `main` without force-pushing. Leave the main `methodologies.html` page unchanged.
+
+---
+
 ## v1.2.0 — Specialist methodology page visual and content overhaul
 
 **Date:** 2026-10-27
