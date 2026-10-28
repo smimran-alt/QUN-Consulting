@@ -12,6 +12,31 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## v1.1.1 — Detailed methodology infographic upgrade
+
+**Date:** 2026-10-27
+
+**Status:** Current
+
+### Activities completed
+
+1. Replaced all six infographics on `how-our-methodology-works.html` with cleaner, more readable scalable SVG diagrams.
+2. Designed a different diagram for each phase: Discover stakeholder/context map; Assess risk heatmap; Design target-state layers; Implement delivery milestones; Validate assurance shield; Optimize continuous improvement loop.
+3. Improved picture prominence, light backgrounds, contrast, typography, stage framing and responsive sizing.
+4. Preserved all six phase descriptions, activities, deliverables and navigation.
+5. Kept other website pages and the 20-methodology library unchanged.
+
+### Files and commits
+
+- `how-our-methodology-works.html` new file blob SHA: `65e4d62bc2fb307ee477eddd34d5d306327fe5e4`
+- All other website files unchanged.
+
+### Rollback to v1.1.0
+
+Restore `how-our-methodology-works.html` from commit `b154cb3d0a2082976959d8f560785d13ec2c1bcc` (the previous release baseline), then commit it to `main`. Do not force-push. The earlier file blob SHA was `26a0f5e346ee2cae4115cbb754aa4ab984b0f1aa`.
+
+---
+
 ## v1.1.0 — Eight dedicated specialist methodology pages
 
 **Date:** 2026-10-27
