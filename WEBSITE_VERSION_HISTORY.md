@@ -12,6 +12,47 @@ This file is the source of truth for change tracking and rollback of QUN Consult
 
 ---
 
+## v1.2.0 — Specialist methodology page visual and content overhaul
+
+**Date:** 2026-10-27
+
+**Status:** Current specialist-page release; main Methodologies page remains at v1.1.3
+
+### Activities completed
+
+1. Replaced the small, repeated hero timeline on all eight specialist pages with distinct, high-resolution responsive SVG infographics on a light background:
+   - Enterprise Cyber Risk: risk exposure heatmap.
+   - ISO 27001 ISMS: layered management-system controls.
+   - ISO 42001 AI Governance: AI governance orbit.
+   - Penetration Testing: authorized testing pathway.
+   - Incident Response: continuous response-and-recovery cycle.
+   - Zero Trust Architecture: context-aware access hub.
+   - Cyber Resilience: recovery and dependency layers.
+   - Data Protection & Insider Risk: information protection shield.
+2. Increased the visual area, image contrast, type sizes, whitespace, and responsive scaling.
+3. Replaced generic placeholder text beneath all four use cases on each page with service-specific explanations of what the use case helps a client assess or decide.
+4. Added three clear outcome panels explaining what QUN examines, how it prioritizes, and what clients receive.
+5. Preserved the detailed six-step methodology, output lists, four use cases, and **clearly labeled fictional client scenarios** on every page.
+6. Kept `methodologies.html` and its approved v1.1.3 layout unchanged.
+
+### Affected files and update commits
+
+- `methodology-enterprise-cyber-risk.html` — `ab77ce0fb8a4ad54e748aca3db848e1587c9521d`
+- `methodology-iso-27001-isms.html` — `b097600e9edb439cd621f5f147c7b72f6415eec3`
+- `methodology-iso-42001-ai-governance.html` — `146dd04a3a0f00541cf51d4024a5967ea550f61a`
+- `methodology-penetration-testing.html` — `c536bc7a0700a7ed6b713cdd9244ddbfe39c7030`
+- `methodology-incident-response.html` — `eab19516119813fe4691c6eef924e95d4e065970`
+- `methodology-zero-trust-architecture.html` — `421f6d57720b1998d2aeb472a7f1a36678517220`
+- `methodology-cyber-resilience.html` — `03e243020d5589f3436fd4c5c367d971df00c645`
+- `methodology-data-protection-insider-risk.html` — `0d8548cdac946a84b1e6481d98984bd0363ff3e4`
+- `WEBSITE_VERSION_HISTORY.md` — release record
+
+### Rollback to previous specialist-page release (v1.1.0)
+
+Restore the eight `methodology-*.html` files from the repository commit `67e6267b777646c3a18922e2f813130d8a141c75` (before this release), commit those restored contents onto `main`, and record the rollback. Do not force-push. The main Methodologies page need not be changed.
+
+---
+
 ## Rollback — v1.1.4 → v1.1.3 (current)
 
 **Date:** 2026-10-27
